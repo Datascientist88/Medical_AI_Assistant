@@ -1,0 +1,13 @@
+﻿langchain
+langchain_community
+langchain_core
+langchain_openai
+python-dotenv
+streamlit==1.34.0.
+tiktoken
+qdrant-client
+pypdf
+openai
+streamlit_float
+streamlit_extras
+streamlit-chat-widget==0.1.0
