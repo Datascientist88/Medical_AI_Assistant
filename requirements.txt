@@ -10,4 +10,4 @@ pypdf
 openai
 streamlit_float
 streamlit_extras
-streamlit-chat-widget==0.1.0
+streamlit-chat-widget==0.2.0
