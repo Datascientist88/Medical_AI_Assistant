@@ -4,6 +4,7 @@ import streamlit as st
 from streamlit_chat_widget import chat_input_widget
 from langchain_core.messages import AIMessage, HumanMessage
 from openai import OpenAI
+from streamlit_extras.bottom_container import bottom
 from streamlit_float import *
 from utils.functions import (
     get_vector_store,
@@ -66,13 +67,10 @@ def main():
             with st.chat_message("Human", avatar="👩‍⚕️"):
                 st.write(message.content)
 
-    float_init()
-    footer_container = st.container()
-    with footer_container:
-        response = chat_input_widget()
-    footer_container.float(
-        "display:flex; align-items:center;justify-content:center; overflow:hidden visible;flex-direction:column; position:fixed;bottom:15px;"
-    )
+  
+    with bottom():
+       response = chat_input_widget()
+    
     
     user_query = None
 
