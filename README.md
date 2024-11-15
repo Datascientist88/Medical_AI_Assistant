@@ -60,8 +60,7 @@ This assistant aims to serve as a reliable tool for preliminary medical consulta
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/MohammedBahageel/doctor-ai-assistant.git
-   cd doctor-ai-assistant
+   git clone https://github.com/Datascientist88/Medical_AI_Assistant.git
    ```
 
 2. **Install Dependencies**
