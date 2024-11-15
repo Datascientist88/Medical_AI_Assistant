@@ -22,18 +22,17 @@ client = OpenAI()
 
 # app layout
 def main():
-    # Read HTML file
-    st.set_page_config("Vitrual Training Assistant", "👩‍⚕️")
     with open("style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    title = "IVF Virtual Training Assistant "
-    name = "Fellowship Program"
-    profession = "Doctor Samir Abbas Hospital"
-    imgUrl = "https://static.wixstatic.com/media/bee5a4_b73ad21116a347e79fd2c7a9f5879d56~mv2.gif"
+    title = "AI DOCTOR ASSISTANT"
+    name = "Mohammed Bahageel"
+    profession = "Artificial Intelligence Developer"
+    imgUrl = "https://cdn.pixabay.com/animation/2022/08/15/08/47/08-47-44-137_512.gif"
     st.markdown(
         f"""
         <div class="st-emotion-cache-18ni7ap ezrtsby2">
-                <img class="profileImage" src="{imgUrl}" alt="Your Photo">
+        
+         <img class="profileImage" src="{imgUrl}" alt="Your Photo">
             </a>
             <div class="textContainer">
                 <div class="title"><p>{title}</p></div>
@@ -45,13 +44,11 @@ def main():
         unsafe_allow_html=True,
     )
 
-   
-
    # Initialize session states
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = [
             AIMessage(
-                content=" Hello! I'm Doctor AI Assistant at Doctor Samir Abbas Hospital. How can I assist you today with your medical inquiries? 🥰"
+                content=" Hello ! with you is Doctor Assistant AI  chatbot  how can I assist you today  with your medical questions ? 🥰"
             )
         ]
 
@@ -99,7 +96,6 @@ def main():
             autoplay_audio(response_audio_file)
             os.remove(response_audio_file)
             st.session_state.chat_history.append(AIMessage(content=response))
-
 
 if __name__ == "__main__":
     main()
