@@ -52,7 +52,6 @@ div.ezrtsby2{
   position: absolute;
   margin-bottom: 40px;
   background-color: #033777;
-  width: 400px;
   
 }
 
@@ -66,9 +65,9 @@ div.ezrtsby2{
 }
 
 .profileImage {
-  width: 350px;
+  width: 250px;
   /* Adjust the width as needed */
-  height: 350px;
+  height: 250px;
   margin-right: 10px;
   margin-left: 12px;
   margin-top: 15px;
